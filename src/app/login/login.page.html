@@ -22,13 +22,17 @@
     </ion-toolbar>
 
     <ion-item>
-      <ion-input label="Usuario" labelPlacement="stacked" placeholder="Usuario (3-8 Carácteres)" minlength="3" maxlength="8"></ion-input>
+      <ion-input label="Usuario" labelPlacement="stacked" placeholder="Usuario (3-8 Carácteres)" minlength="3" maxlength="8" [(ngModel)]="usuario.usuario"></ion-input>
     </ion-item>
     <ion-item>
       <ion-input label="Contraseña" labelPlacement="stacked" type="password" maxlength="4" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"></ion-input>
     </ion-item>
 
     <ion-button expand="block" color="tertiary" [routerLink]="['/home']">Ingresar</ion-button>
+
+    <h1>
+      hola {{usuario.usuario}}
+    </h1>
 
       
 
