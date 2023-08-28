@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-img src="assets/images/fishin.jpeg">
+      </ion-img>
+    </ion-toolbar>
+
+    <ion-toolbar>
+      <h1>Login</h1>
+    </ion-toolbar>
+
+    <ion-item>
+      <ion-input label="Usuario" labelPlacement="stacked" placeholder="Usuario (3-8 Carácteres)" minlength="3" maxlength="8"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Contraseña" labelPlacement="stacked" type="password" maxlength="4" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="tertiary" [routerLink]="['/home']">Ingresar</ion-button>
+
+      
+
+  </ion-header>
+
+
+
+</ion-content>
